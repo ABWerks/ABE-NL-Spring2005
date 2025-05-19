@@ -14,7 +14,7 @@ options(tibble.width = Inf)
 
 # BTC
 # https://www.cryptodatadownload.com/data/gemini/
-str(inData <- read.csv("./Drafts/Spring2025/Data/Gemini_BTCUSD_d.csv")[, -1])
+str(inData <- read.csv("./Data/Gemini_BTCUSD_d.csv")[, -1])
 inData$Date <- as.Date(inData$date)
 summary(inData$Date)
 table(duplicated(inData$Date))
